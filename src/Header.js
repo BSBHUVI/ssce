@@ -23,7 +23,7 @@ function Header() {
     const handleLogout = async () => {
       try {
         await logOut();
-        navigate("/");
+        navigate("/ssce");
       } catch (error) {
         console.log(error.message);
       }
@@ -64,16 +64,16 @@ function Header() {
   
            </CloseWrapper>
            <p className='sub ui'>{user.email}</p>
-          <Link to="/header/cse" className='sub'><button className='ui'> COMPUTER SCIENCE AND ENGINEERING
+          <Link to="/ssce/header/cse" className='sub'><button className='ui'> COMPUTER SCIENCE AND ENGINEERING
     
   </button></Link><hr />
-          <Link to="/header/ece" className='sub'><button className='ui'> ELECTRONICS AND COMMUNICATION ENGINEERING
+          <Link to="/ssce/header/ece" className='sub'><button className='ui'> ELECTRONICS AND COMMUNICATION ENGINEERING
     
   </button></Link><hr />
-          <Link to="/header/eee" className='sub'><button className='ui'> ELECTRICAL AND ELECTRONICS ENGINEERGING
+          <Link to="/ssce/header/eee" className='sub'><button className='ui'> ELECTRICAL AND ELECTRONICS ENGINEERGING
     
   </button></Link><hr />
-          <Link to="/header/mec" className='sub'><button className='ui'> MECHANICAL ENGINEERING
+          <Link to="/ssce/header/mec" className='sub'><button className='ui'> MECHANICAL ENGINEERING
     
   </button></Link><hr />
  <button className='sub ui'  onClick={handleLogout}>logout</button>
