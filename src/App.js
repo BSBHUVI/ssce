@@ -3540,7 +3540,7 @@ element={
               </Route>
               
 
-              <Route path="/" element={<Login />} />
+              <Route path="/ssce" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
              
             </Routes>
