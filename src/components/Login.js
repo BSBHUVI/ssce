@@ -27,7 +27,7 @@ const Login = () => {
     e.preventDefault();
     try {
       await googleSignIn();
-      navigate("/ssce/header");
+      navigate("/ssce/header/chat");
     } catch (error) {
       console.log(error.message);
     }

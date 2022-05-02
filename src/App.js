@@ -13,7 +13,7 @@ import Signup from "./components/Signup";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
 import Header from "./Header";
-import Startpage from "./all/Startpage";
+
 
 function App() {
   return (
@@ -3547,11 +3547,7 @@ element={
               <Route path="/ssce/signup" element={<Signup />} />
              
             </Routes>
-            <Routes>
-              <Route path="/ssce/header" element={  <ProtectedRoute>
-                    <Startpage />
-                  </ProtectedRoute>}/>
-            </Routes>
+         
           </UserAuthContextProvider>
         </Col>
       </Row>
