@@ -36,7 +36,9 @@ function Header() {
       
     <Container>
     <IconButton>
+    <Link to="/ssce/header/chat">
      <ChatIcon fontSize='large'/>
+     </Link>
      </IconButton>
     
       <Menu>

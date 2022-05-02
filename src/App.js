@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import App1 from "./all/App1";
 
 import Navbar from './all/Navbar'
 import Navbar2 from './all/Navbar2'
@@ -28,6 +29,7 @@ function App() {
                   </ProtectedRoute>
                 }
               >
+              <Route path='/ssce/header/chat' element={<App1/>}/>
 
 
 <Route path='/ssce/header/mec' element={<Navbar4/>}>
