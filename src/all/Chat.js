@@ -17,7 +17,7 @@ function Chat({messages}) {
     const {  user } = useUserAuth();
 
   const time=new Date().toLocaleTimeString();
-  const time2=time.slice(0,5);
+  const time2=time.slice(0,4);
     
     const [input,setInput]=useState("");
     const sendMessage= async (e)=>{

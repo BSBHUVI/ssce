@@ -65,17 +65,17 @@ function Header() {
           <CustomClose onClick={()=>setburgerStatus(false)}/> 
   
            </CloseWrapper>
-           <p className='sub ui'>{user.email}</p>
-          <Link to="/ssce/header/cse" className='sub'><button className='ui'> COMPUTER SCIENCE AND ENGINEERING
+           <p  onClick={()=>setburgerStatus(false)} className='sub ui'>{user.email}</p>
+          <Link to="/ssce/header/cse" className='sub'><button  onClick={()=>setburgerStatus(false)} className='ui'> COMPUTER SCIENCE AND ENGINEERING
     
   </button></Link>
-          <Link to="/ssce/header/ece" className='sub'><button className='ui'> ELECTRONICS AND COMMUNICATION ENGINEERING
+          <Link to="/ssce/header/ece" className='sub'><button  onClick={()=>setburgerStatus(false)} className='ui'> ELECTRONICS AND COMMUNICATION ENGINEERING
     
   </button></Link>
-          <Link to="/ssce/header/eee" className='sub'><button className='ui'> ELECTRICAL AND ELECTRONICS ENGINEERGING
+          <Link to="/ssce/header/eee" className='sub'><button  onClick={()=>setburgerStatus(false)} className='ui'> ELECTRICAL AND ELECTRONICS ENGINEERGING
     
   </button></Link>
-          <Link to="/ssce/header/mec" className='sub'><button className='ui'> MECHANICAL ENGINEERING
+          <Link to="/ssce/header/mec" className='sub'><button  onClick={()=>setburgerStatus(false)} className='ui'> MECHANICAL ENGINEERING
     
   </button></Link>
  <button className='sub ui'  onClick={handleLogout}>logout</button>
@@ -154,7 +154,7 @@ background:rgb(225, 163, 81);
 width:300px;
 z-index:16;
 list-style:none;
-padding:0px;
+padding:4px;
 display:flex;
 text-align:start;
 flex-direction:column;
