@@ -1,5 +1,5 @@
 
-import { InsertEmoticon } from '@mui/icons-material'
+import { ArrowBackIos, InsertEmoticon } from '@mui/icons-material'
 
 
 import { Mic } from '@mui/icons-material'
@@ -11,10 +11,10 @@ import React from 'react'
 import { useState } from 'react'
 import axios from './axios'
 import './Chat.css'
-import {useUserAuth} from '../context/UserAuthContext'
+
 
 function Chat({messages}) {
-    const {  user } = useUserAuth();
+   
 
   const time=new Date().toLocaleTimeString();
   const time2=time.slice(0,4);
@@ -27,9 +27,24 @@ function Chat({messages}) {
         }else{
         axios.post('/messages/new',{
             message:input,
-            name:user.email,
+            name:"lakshmi prasad",
             timestamp:time2,
             recieved:true,
+        });
+
+        setInput("");
+    }
+    };
+    const sendMessage1= async (e)=>{
+        e.preventDefault();
+        if(input===''){
+            alert('please enter the value')
+        }else{
+        axios.post('/messages/new',{
+            message:input,
+            name:"bookika",
+            timestamp:time2,
+            recieved:false,
         });
 
         setInput("");
@@ -69,6 +84,12 @@ function Chat({messages}) {
             <input value={input} onChange={e=>setInput(e.target.value)} placeholder='type a message' type='text' required />
             <button className='opp' onClick={sendMessage} type='submit'>=
             <ArrowForwardIos/>
+
+
+
+            </button>
+            <button className='opp' onClick={sendMessage1} type='submit'>=
+            <ArrowBackIos/>
 
 
 
