@@ -1,5 +1,5 @@
 
-import { ArrowBackIos, InsertEmoticon } from '@mui/icons-material'
+import { InsertEmoticon } from '@mui/icons-material'
 
 
 import { Mic } from '@mui/icons-material'
@@ -9,13 +9,15 @@ import { ArrowForwardIos } from '@mui/icons-material'
 import { Avatar } from '@mui/material'
 import React from 'react'
 import { useState } from 'react'
+import { useUserAuth } from '../context/UserAuthContext'
 import axios from './axios'
 import './Chat.css'
 
 
+
 function Chat({messages}) {
    
-
+    const {user} = useUserAuth();
   const time=new Date().toLocaleTimeString();
   const time2=time.slice(0,4);
     
@@ -27,7 +29,7 @@ function Chat({messages}) {
         }else{
         axios.post('/messages/new',{
             message:input,
-            name:"lakshmi prasad",
+            name:user.email,
             timestamp:time2,
             recieved:true,
         });
@@ -35,28 +37,14 @@ function Chat({messages}) {
         setInput("");
     }
     };
-    const sendMessage1= async (e)=>{
-        e.preventDefault();
-        if(input===''){
-            alert('please enter the value')
-        }else{
-        axios.post('/messages/new',{
-            message:input,
-            name:"bookika",
-            timestamp:time2,
-            recieved:false,
-        });
-
-        setInput("");
-    }
-    };
+    
     
   return (
     <div className='chat'>
     <div className="chat__header">
         <Avatar/>
         <div className="chat__headerinfo">
-            <h3>SRI SAIRAM COLLEGE OF ENGINEERING</h3>
+            <h3>POST YOUR REVIEWS</h3>
             <p>{navigator.onLine ? 'online':'offline'}</p>
         </div>
         <div className="chatheaderRight">
@@ -88,12 +76,7 @@ function Chat({messages}) {
 
 
             </button>
-            <button className='opp' onClick={sendMessage1} type='submit'>=
-            <ArrowBackIos/>
-
-
-
-            </button>
+            
         </form>
         <Mic/>
     </div>

@@ -27,7 +27,7 @@ const Login = () => {
     e.preventDefault();
     try {
       await googleSignIn();
-      navigate("/ssce/header/chat");
+      navigate("/ssce/header/cse");
     } catch (error) {
       console.log(error.message);
     }
@@ -36,7 +36,7 @@ const Login = () => {
   return (
     <>
       <div className="p-4  box">
-        <h2 className="mb-3">SSCE LOGIN</h2>
+        <h2 className="mb-3">Zomato Login</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">

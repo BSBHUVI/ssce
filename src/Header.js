@@ -44,7 +44,7 @@ function Header() {
       <Menu>
       <IconButton>
    
-    <h1 className='text'>Sri Sairam College Of Engineering</h1>
+    <h1 className='text'>Zomato</h1>
   
     </IconButton>
     
@@ -66,16 +66,16 @@ function Header() {
   
            </CloseWrapper>
            <p  onClick={()=>setburgerStatus(false)} className='sub ui'>{user.email}</p>
-          <Link to="/ssce/header/cse" className='sub'><button  onClick={()=>setburgerStatus(false)} className='ui'> COMPUTER SCIENCE AND ENGINEERING
+          <Link to="/ssce/header/cse" className='sub'><button  onClick={()=>setburgerStatus(false)} className='ui'> Home
     
   </button></Link>
-          <Link to="/ssce/header/ece" className='sub'><button  onClick={()=>setburgerStatus(false)} className='ui'> ELECTRONICS AND COMMUNICATION ENGINEERING
+          <Link to="/ssce/header/ece" className='sub'><button  onClick={()=>setburgerStatus(false)} className='ui'> Orders
     
   </button></Link>
-          <Link to="/ssce/header/eee" className='sub'><button  onClick={()=>setburgerStatus(false)} className='ui'> ELECTRICAL AND ELECTRONICS ENGINEERGING
+          <Link to="/ssce/header/eee" className='sub'><button  onClick={()=>setburgerStatus(false)} className='ui'> payment
     
   </button></Link>
-          <Link to="/ssce/header/mec" className='sub'><button  onClick={()=>setburgerStatus(false)} className='ui'> MECHANICAL ENGINEERING
+          <Link to="/ssce/header/mec" className='sub'><button  onClick={()=>setburgerStatus(false)} className='ui'> Contact
     
   </button></Link>
  <button className='sub ui'  onClick={handleLogout}>logout</button>

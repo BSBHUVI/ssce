@@ -143,4 +143,29 @@ body {
      width: auto;
      height: auto;
    }
-  
+   .foods{
+     display: flex;
+     width: 100%;
+     height: fit-content;
+     flex-direction: row;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     background-color: aqua;
+   }
+   th,tr,td{
+     border: 2px solid black;
+     border-collapse: collapse;
+     padding: 20px;
+     margin: 20px;
+     height: fit-content;
+     width: 45%;
+     background-color: aqua;
+    
+   }
+   td{
+     font-size: 25px;
+   }
+  .imga{
+    width: 70px;
+    margin: 0px 20px;
+  }
