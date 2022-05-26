@@ -28,42 +28,42 @@ function Navbar3() {
             <tr>
               <td>1</td>
               <td>credit card</td>
-              <td><a href="https://paytm.me/0id-3Q6">credit card</a></td>
+              <td><a target="_blank" href="https://paytm.me/0id-3Q6">credit card</a></td>
             </tr>
             <tr>
               <td>2</td>
               <td>Debit card</td>
-              <td><a href="https://paytm.me/0id-3Q6">Debit card</a></td>
+              <td><a target="_blank" href="https://paytm.me/0id-3Q6">Debit card</a></td>
             </tr>
             <tr>
               <td>3</td>
               <td>Phone pe</td>
-              <td><a href="https://paytm.me/0id-3Q6">Phone pe</a></td>
+              <td><a target="_blank" href="https://paytm.me/0id-3Q6">Phone pe</a></td>
             </tr>
             <tr>
               <td>4</td>
               <td>Paytm</td>
-              <td><a href="https://paytm.me/0id-3Q6">Paytm</a></td>
+              <td><a target="_blank" href="https://paytm.me/0id-3Q6">Paytm</a></td>
             </tr>
             <tr>
               <td>5</td>
               <td>Google pay</td>
-              <td><a href="https://paytm.me/0id-3Q6">Google pay</a></td>
+              <td><a target="_blank" href="https://paytm.me/0id-3Q6">Google pay</a></td>
             </tr>
             <tr>
               <td>6</td>
               <td>Amazon Pay</td>
-              <td><a href="https://paytm.me/0id-3Q6">Amazon Pay</a></td>
+              <td><a target="_blank" href="https://paytm.me/0id-3Q6">Amazon Pay</a></td>
             </tr>
             <tr>
               <td>7</td>
               <td>Upi</td>
-              <td><a href="https://paytm.me/0id-3Q6">UPI</a></td>
+              <td><a target="_blank" href="https://paytm.me/0id-3Q6">UPI</a></td>
             </tr>
             <tr>
               <td>8</td>
               <td>EMI</td>
-              <td><a href="https://paytm.me/0id-3Q6">EMI</a></td>
+              <td><a target="_blank" href="https://paytm.me/0id-3Q6">EMI</a></td>
             </tr>
           </table>
         </div>

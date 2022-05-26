@@ -44,7 +44,7 @@ function Header() {
       <Menu>
       <IconButton>
    
-    <h1 className='text'>Zomato</h1>
+      <Link to="/ssce/header/cse"><h1 className='text'>Zomato</h1></Link>
   
     </IconButton>
     
@@ -62,7 +62,9 @@ function Header() {
       </RightMenu>
       <BurgerNav show={burgerStatus}>
           <CloseWrapper>
-          <CustomClose onClick={()=>setburgerStatus(false)}/> 
+          <IconButton>
+          <CustomClose  onClick={()=>setburgerStatus(false)}/> 
+          </IconButton>
   
            </CloseWrapper>
            <p  onClick={()=>setburgerStatus(false)} className='sub ui'>{user.email}</p>
@@ -171,6 +173,7 @@ li{
 `
 const CustomClose=styled(CloseIcon)`
 cursor:pointer;
+
 `
 const CloseWrapper=styled.div`
 display:flex;

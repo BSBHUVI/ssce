@@ -1,14 +1,18 @@
 import React from 'react'
 import './Cards.css'
 
-function Cards({image,price}) {
+function Cards({image,price,confirm,buy,cart}) {
+  const fun=()=>{
+    alert("Added to cart")
+  }
   return (
     
       <div className="cardb">
           <img src={image} alt="pizza" />
-      <button className='button'>Buy now</button>
+      <a target="_blank" href="https://paytm.me/0id-3Q6"><button className='button'>{buy}</button></a>
       <button className='button'>{price}</button>
-      <button className='button'>Add to card</button>
+      <button onClick={fun} className='button'>{cart}</button>
+      <h1 className='confirm'>{confirm}</h1>
       </div>
     
   )

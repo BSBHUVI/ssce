@@ -151,6 +151,7 @@ body {
      justify-content: space-between;
      flex-wrap: wrap;
      background-color: aqua;
+     
    }
    th,tr,td{
      border: 2px solid black;

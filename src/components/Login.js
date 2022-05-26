@@ -17,7 +17,7 @@ const Login = () => {
     setError("");
     try {
       await logIn(email, password);
-      navigate("/ssce/header/chat");
+      navigate("/ssce/header/cse");
     } catch (err) {
       setError(err.message);
     }

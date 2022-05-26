@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
+
 import App1 from "./all/App1";
 
 import Navbar from './all/Navbar'
