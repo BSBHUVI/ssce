@@ -36,25 +36,7 @@ body {
   .nav-link{
     display: inline;
   }
-  /* <Route
-  path="/21MAT21"
-  element={
-    <Notes
-      title=""
-   
-      name1=" "
-      name2=""
-      name3=""
-      name4=""
-      name5=""
-      link1=""
-      link2=""
-      link3=""
-      link4=""
-      link5=""
-    />
-  }
-  /> */
+
   .logo{
     display: flex;
     align-items: center;
@@ -77,7 +59,7 @@ body {
     color: white;
     text-shadow: 1px 1px 2px black,0 0 25px blue,0 0 5px darkblue;
   }
-  /* From uiverse.io by @fanishah */
+  
   .card {
     width: 60rem;
     height: 29rem;
@@ -93,8 +75,7 @@ body {
     border: #f2295bf0 0.2em solid;
     border-radius: 2.5rem 0 2.5rem 0;
    }
-  /* From uiverse.io by @adamgiebl */
-  /* From uiverse.io by @alexroumi */
+  
   .ui {
     padding: 7px 15px;
     border: unset;
